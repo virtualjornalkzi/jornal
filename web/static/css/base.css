@@ -1,8 +1,50 @@
 .header{
-    padding: 10px;
+    padding: 0px;
+}
+
+.header-navbar{
+
+}
+
+.header-navbar-container{
+    height: 50px;
+}
+
+.header-emblem{
+    padding: 5px;
 }
 
 .header-emblem-img{
-    width: 100px;
-    height: 100px;
+    height: 60px;
+}
+
+.header-menu{
+
+}
+
+.header-menu-list{
+
+}
+
+.header-menu-element{
+
+}
+
+.header-menu-element-link{
+    line-height: 40px!important;
+    font-size: 20px;
+}
+
+.header-user-profile {
+}
+
+.navbar-nav {
+    width: 100%;
+    text-align: center;
+
+}
+
+.navbar-nav li {
+    float: none;
+    display: inline-block;
 }
