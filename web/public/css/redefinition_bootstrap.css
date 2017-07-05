@@ -1,0 +1,15 @@
+.nav-link {
+    color: #ffffff!important;
+}
+
+.nav-link.disabled {
+    color: #4f4f4f!important;
+}
+
+.nav-link.disabled:hover {
+    color: #4f4f4f!important;
+}
+
+.nav-link:hover {
+    color: #a8a8a8!important;
+}
