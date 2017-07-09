@@ -4,11 +4,11 @@
             <span class="navbar-toggler-icon"></span>
         </button>
         <a class="navbar-brand" href="#">
-            <img class="rounded-circle header-img" src="{{ asset('public/img/temp-img-2.jpg') }}" width="30" height="30" alt="">
+            <img class="rounded-circle header-img" src="{{ asset('public/img/temp-img-2.jpg') }}" alt="">
             College
         </a>
         <div class="collapse navbar-collapse" id="navbar">
-            <ul class="navbar-nav mr-auto">
+            <ul class="header-menu navbar-nav mr-auto">
                 <li class="nav-item active">
                     <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
                 </li>
@@ -29,19 +29,17 @@
                     </div>
                 </li>
             </ul>
-            <li class="navbar-nav nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="http://example.com" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                    Profile
-                </a>
-                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                    <a class="dropdown-item" href="#">Action</a>
-                    <a class="dropdown-item" href="#">Another action</a>
-                    <a class="dropdown-item" href="#">Something else here</a>
-                </div>
-            </li>
             <a class="navbar-brand" href="#">
-                <img class="rounded-circle header-img" src="{{ asset('public/img/temp-img.jpg') }}" width="30" height="30" alt="">
+                <img class="rounded-circle header-img little-profile-img" src="{{ asset('public/img/temp-img.jpg') }}" alt=""
+                     onclick="$('#profile-menu').toggle()">
             </a>
         </div>
-</nav>
+    </nav>
+    <div class="profile-container" id="profile-menu">
+        <div class="block">
+            <div class="profile-name">Sergey Pustovit</div>
+            <div class="prifile-email">sertdfsfsf@gmail.com</div>
+            <img class="rounded-circle middle-profile-img" src="{{ asset('public/img/temp-img.jpg') }}" width="30" height="30" alt="">
+        </div>
+    </div>
 </div>
