@@ -2,6 +2,10 @@
     color: #ffffff!important;
 }
 
+.nav-link:hover {
+    color: #a8a8a8!important;
+}
+
 .nav-link.disabled {
     color: #4f4f4f!important;
 }
@@ -10,6 +14,3 @@
     color: #4f4f4f!important;
 }
 
-.nav-link:hover {
-    color: #a8a8a8!important;
-}
