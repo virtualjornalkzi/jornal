@@ -22,6 +22,9 @@
 .header-user-profile-icon {
 
 }
+.header-user-profile-icon:hover {
+    cursor: pointer;
+}
 
 /* Vertical middle links */
 .navbar-nav li a {
@@ -43,6 +46,12 @@
 /* Logo */
 .profile-header-logo {
     float: right;
+}
+
+/* INFO block */
+.info-section {
+    padding-left: 15px;
+    padding-right: 15px;
 }
 
 /* left block */
@@ -67,17 +76,33 @@
     border-bottom: solid #f9f9f9 1px;
 }
 
+/* BUTTON block */
+.grey-section {
+    position: absolute;
+    bottom: 0;
+    height: 40px;
+    width: 100%;
+    background-color: #f0f0f0;
+    border-top: solid #c5c5c5 1px;
+}
+
+/* Logout */
+.header-profile-logout {
+    position: absolute;
+    right: 5px;
+    bottom: 5px;
+}
 
 /* Border with triangle*/
 .block {
     border-radius: 3px;
-    padding: 15px;
+    padding: 15px 0 0;
 
     background: white;
     box-shadow: 0 0 2px #000; /* Добавляем тень для блока */
 
     width: 300px;
-    height: 120px;
+    height: 150px;
 }
 .block::after, .block::before {
     content: '';

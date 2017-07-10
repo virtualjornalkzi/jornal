@@ -37,22 +37,22 @@
                 </li>
             </ul>
             <!-- User profile icon -->
-            <a class="navbar-brand header-user-profile-icon" href="#">
-                <img class="rounded-circle header-img little-icon-img" src="{{ asset('public/img/temp-img.jpg') }}" alt=""
-                     onclick="$('#profile-menu').toggle()">
-            </a>
+            <img id="profile-button" class="navbar-brand header-user-profile-icon rounded-circle header-img little-icon-img" src="{{ asset('public/img/temp-img.jpg') }}" alt="">
         </div>
     </nav>
     <!-- User Profile -->
     <div class="profile-container" id="profile-menu">
         <div class="block">
-            <div class="header-profile-info">
-                <div class="header-profile-name">Sergey Pustovit</div>
-                <div class="header-profile-email">sertdfsfsf@gmail.com</div>
-                    <button type="button" class="btn btn-secondary">Secondary</button>
-                    <button type="button" class="btn btn-secondary">Secondary2</button>
+            <div class="info-section">
+                <div class="header-profile-info">
+                    <div class="header-profile-name"><a href="#">Sergey Pustovit</a></div>
+                    <div class="header-profile-email">sertdfsfsf@gmail.com</div>
+                </div>
+                <img class="rounded-circle middle-icon-img profile-header-logo" src="{{ asset('public/img/temp-img.jpg') }}" width="30" height="30" alt="">
             </div>
-            <img class="rounded-circle middle-icon-img profile-header-logo" src="{{ asset('public/img/temp-img.jpg') }}" width="30" height="30" alt="">
+            <div class="grey-section">
+                <button type="button" class="btn btn-secondary header-profile-logout">Выход</button>
+            </div>
         </div>
     </div>
 </div>

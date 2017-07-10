@@ -5,8 +5,8 @@ html {
 }
 
 .content {
-    padding: 0px;
-    margin-top: 80px;
+    padding: 0!important;
+    margin-top: 64px;
     margin-bottom: 40px;
     width: 100%;
 }
