@@ -1,0 +1,40 @@
+.notifications{
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    z-index: 999999;
+    padding: 10px;
+}
+
+.notification {
+    width: 300px;
+    height: auto;
+    padding: 6px;
+    margin: 2px;
+    border-radius: 5px;
+    border: solid #d8d8d8 1px;
+    font-size: 15px;
+    opacity: 1000;
+}
+
+.type-notification {
+    float: left;
+}
+
+.close-notification {
+    height: 20px;
+    font-size: 20px;
+    float: right;
+}
+
+.info {
+    background-color: #81d854;
+}
+
+.warning {
+    background-color: #f5ed64;
+}
+
+.error {
+    background-color: #d83628;
+}
