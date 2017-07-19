@@ -1,25 +1,35 @@
-function getNotoficationDiv(status, text) {
+function getNotificationDiv(type, text) {
+    var tempTimeClass = getTimeString()  + getRandomInt(0, 100).toString();
     var info =
-        "<div class='notification " + status + "'>" +
-
-            "<div class='close-notification'>×</div>" +
+        "<div class='notification " + type + " " + tempTimeClass + "'>" +
+            "<div class='close-notification' onclick='$(this).parent().removeDOMSlowly(1000)' >×</div>" +
             "<div class='content-notification'>" + text + "</div>" +
         "</div>";
-    return info;
+    return [info, tempTimeClass];
+}
+
+function notification(text, type, hide) {
+    var temp = getNotificationDiv(type, text);
+    var element = temp[0];
+    var delClass = temp[1];
+    $('#notifications').append(element);
+    $('.' + delClass).showSlowly(500, function(){
+        $('.notification').filter(function(){ return $(this).offset().top < 400; }).removeDOMSlowly(200);
+    });
+    if (hide === undefined) setTimeout(function(){$('.' + delClass).removeDOMSlowly(1000)}, 5000);
+    else if (hide !== false) {
+        setTimeout(function(){$('.' + delClass).removeDOMSlowly(1000)}, hide);
+    }
 }
 
 
-var info = "<div class='notification info'>";
 
-function notificationInfo(text) {
-    var element = getNotoficationDiv('info', text);
-    $('#notifications').append(element);
+function notificationInfo(text, hide) {
+    notification(text, 'info', hide);
 }
-function notificationWarning(text) {
-    var element = getNotoficationDiv('warning', text);
-    $('#notifications').append(element);
+function notificationWarning(text, hide) {
+    notification(text, 'warning', hide);
 }
-function notificationError(text) {
-    var element = getNotoficationDiv('error', text);
-    $('#notifications').append(element);
+function notificationError(text, hide) {
+    notification(text, 'error', hide);
 }
